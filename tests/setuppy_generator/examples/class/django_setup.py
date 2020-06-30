@@ -1,7 +1,7 @@
 #!/usr/bin/env python
-from setuppy_generator import BaseGenerator
+from setuppy_generator import BaseGenerator, raw
 
-generator = setuppy_generator.BaseGenerator(
+generator = BaseGenerator(
     name='name',
     version='1.0.0',
     classifiers=[

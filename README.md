@@ -1,13 +1,13 @@
 <!--
-https://pypi.org/project/readme-generator/
-https://pypi.org/project/python-readme-generator/
+https://readme42.com
 -->
 
-[![](https://img.shields.io/badge/language-Python-blue.svg?longCache=True)]()
-[![](https://img.shields.io/pypi/v/setuppy-generator.svg?maxAge=3600)](https://pypi.org/project/setuppy-generator/)
-[![Travis](https://api.travis-ci.org/andrewp-as-is/setuppy-generator.py.svg?branch=master)](https://travis-ci.org/andrewp-as-is/setuppy-generator.py/)
 
-#### Installation
+[![](https://img.shields.io/pypi/v/setuppy-generator.svg?maxAge=3600)](https://pypi.org/project/setuppy-generator/)
+[![](https://img.shields.io/badge/License-Unlicense-blue.svg?longCache=True)](https://unlicense.org/)
+[![](https://github.com/andrewp-as-is/setuppy-generator.py/workflows/tests42/badge.svg)](https://github.com/andrewp-as-is/setuppy-generator.py/actions)
+
+### Installation
 ```bash
 $ [sudo] pip install setuppy-generator
 ```
@@ -32,17 +32,6 @@ $ [sudo] pip install setuppy-generator
 `packages`|`setuptools.find_packages()`, `$SETUP_PACKAGES`
 `py_modules`|python files in a current directory, `$SETUP_PY_MODULES`
 `scripts`|`scripts/*` files, `$SETUP_SCRIPTS`
-
-#### Classes
-class|`__doc__`
--|-
-`setuppy_generator.BaseGenerator` |abstract generator class
-`setuppy_generator.Generator` |generator class
-
-#### Executable modules
-usage|`__doc__`
--|-
-`python -m setuppy_generator` |create `setup.py`
 
 #### Examples
 ```
@@ -147,9 +136,9 @@ setup(
 )
 ```
 
-#### Related projects
+#### Related
 +   [`setupcfg-generator` - `setup.cfg` generator](https://pypi.org/project/setupcfg-generator/)
 
 <p align="center">
-    <a href="https://pypi.org/project/python-readme-generator/">python-readme-generator</a>
+    <a href="https://readme42.com/">readme42.com</a>
 </p>

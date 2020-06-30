@@ -1,19 +1,7 @@
-try:
-    from setuptools import setup
-except ImportError:
-    from distutils.core import setup
+import setuptools
 
-
-setup(
+setuptools.setup(
     name='setuppy-generator',
-    version='2019.10.24',
-    install_requires=[
-        'click',
-        'public',
-        'setupcfg',
-        'setuptools',
-    ],
-    packages=[
-        'setuppy_generator',
-    ],
+    install_requires=open('requirements.txt').read().splitlines(),
+    packages=setuptools.find_packages()
 )
