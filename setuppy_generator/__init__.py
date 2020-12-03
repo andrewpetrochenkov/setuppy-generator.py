@@ -189,18 +189,6 @@ class Generator(BaseGenerator):
                 open(path).read().splitlines()
             ))
 
-    def get_py_modules(self):
-        """return a list with python modules in project root"""
-        if 'SETUP_PY_MODULES' in os.environ:
-            return getenvlist('SETUP_PY_MODULES')
-        return list(map(
-            lambda f: os.path.splitext(f)[0],
-            filter(
-                lambda f: os.path.splitext(f)[1] == ".py" and f != "setup.py",
-                os.listdir(os.getcwd())
-            )
-        ))
-
     def get_scripts(self):
         """return `scripts` list. `bin/`, `scripts/` files"""
         if 'SETUP_SCRIPTS' in os.environ:
